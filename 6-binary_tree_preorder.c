@@ -6,7 +6,7 @@
  * @func: value of new node
  */
 
-void recursion_left(binary_tree_t *aux, void (*func)(int))
+void recursion_left(const binary_tree_t *aux, void (*func)(int))
 {
 	if(aux->left)
 	{
@@ -15,7 +15,7 @@ void recursion_left(binary_tree_t *aux, void (*func)(int))
 	}
 	recursion_right(aux, func);
 }
-void recursion_right(binary_tree_t *aux, void (*func)(int))
+void recursion_right(const binary_tree_t *aux, void (*func)(int))
 {
 	if (aux->right)
 	{
@@ -26,7 +26,7 @@ void recursion_right(binary_tree_t *aux, void (*func)(int))
 }
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
-	binary_tree_t *aux = NULL;
+	const binary_tree_t *aux = NULL;
 
 	if (!tree || !func)
 		return;
