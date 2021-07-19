@@ -9,7 +9,7 @@
 void recursion_left(const binary_tree_t *aux, void (*func)(int))
 {
 	func(aux->n);
-	if(aux->left)
+	if(!aux->left)
 	{
 		aux = aux->left;
 	}
@@ -17,10 +17,10 @@ void recursion_left(const binary_tree_t *aux, void (*func)(int))
 }
 void recursion_right(const binary_tree_t *aux, void (*func)(int))
 {
-	aux = aux->right;
+	func(aux->n);
 	if (aux->right)
 	{
-		func(aux->n);
+		aux = aux->right;
 	}
 	recursion_right(aux, func);
 }
