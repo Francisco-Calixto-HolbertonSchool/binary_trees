@@ -3,7 +3,7 @@
  * recursive_free - Entry point
  * @aux: pointer to tree root
  */
-recursive_free(binary_tree_t *aux)
+void recursive_free(binary_tree_t *aux)
 {
 	if (!aux)
 		return;
