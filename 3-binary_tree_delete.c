@@ -23,5 +23,4 @@ void binary_tree_delete(binary_tree_t *tree)
 		return;
 	aux = tree;
 	recursive_free(aux);
-	free(tree);
 }
