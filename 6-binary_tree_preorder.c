@@ -8,21 +8,21 @@
 
 void recursion_left(const binary_tree_t *aux, void (*func)(int))
 {
+	func(aux->n);
 	if(aux->left)
 	{
-		func(aux->n);
 		aux = aux->left;
 	}
-	recursion_left(aux, func);
+	recursion_right(aux, func);
 }
 void recursion_right(const binary_tree_t *aux, void (*func)(int))
 {
+	aux = aux->right;
 	if (aux->right)
 	{
 		func(aux->n);
-		aux = aux->right;
 	}
-	recursion_right(aux, func);
+	recursion_left(aux, func);
 }
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
