@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_node - Entry point
+ * binary_tree_preorder - Entry point
  * @tree: pointer to tree root
  * @func: value of new node
  */
