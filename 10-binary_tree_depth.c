@@ -2,7 +2,7 @@
 
 /**
  * binary_tree_depth - Entry point
- * @tree: pointer to node to measure the depth
+ * @tree: pointer to node of tree to measure the depth
  * Return: depth of tree
  */
 
