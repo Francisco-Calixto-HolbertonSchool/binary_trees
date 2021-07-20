@@ -1,19 +1,6 @@
 #include "binary_trees.h"
 
 /**
- * max - Entry point
- * @a: number 1
- * @b: number 2
- * Return: max number
- */
-size_t max(size_t a, size_t b)
-{
-	if (a >= b)
-		return (a);
-	return (b);
-}
-
-/**
  * binary_tree_height - Entry point
  * @tree: pointer to tree root
  * Return: height of tree
