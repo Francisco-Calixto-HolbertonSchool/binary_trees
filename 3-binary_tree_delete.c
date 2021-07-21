@@ -12,7 +12,7 @@ void recursive_free(binary_tree_t *aux)
 	free(aux);
 }
 /**
- * binary_tree_postorder - Entry point
+ * binary_tree_delete - Entry point
  * @tree: pointer to tree root
  */
 void binary_tree_delete(binary_tree_t *tree)
