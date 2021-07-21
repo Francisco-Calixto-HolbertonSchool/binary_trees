@@ -28,6 +28,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
 /**
  * binary_tree_balance - Entry point
  * @tree: pointer to tree node to measure balance
+ * Return: left child height - right child height
  */
 int binary_tree_balance(const binary_tree_t *tree)
 {
