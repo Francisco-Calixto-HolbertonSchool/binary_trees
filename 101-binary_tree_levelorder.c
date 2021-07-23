@@ -9,7 +9,7 @@
  * @func: function
  */
 
-void aux(binary_tree_t *tree, int i, void (*func)(int))
+void aux(const binary_tree_t *tree, int i, void (*func)(int))
 {
 	if(binary_tree_depth(tree) == (int) i)
 		func(tree->n);
