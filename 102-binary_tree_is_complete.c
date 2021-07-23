@@ -19,7 +19,7 @@ int binary_tree_is_perfect_1(const binary_tree_t *tree)
 }
 
 /**
- * binary_tree_is_perfect - Entry point
+ * binary_tree_is_complete - Entry point
  * @tree: pointer to tree root
  * Return: 1 if full 0 otherwise
  */
