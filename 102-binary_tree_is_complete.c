@@ -18,6 +18,11 @@ int binary_tree_is_perfect_1(const binary_tree_t *tree)
 	return (0);
 }
 
+/**
+ * binary_tree_is_perfect - Entry point
+ * @tree: pointer to tree root
+ * Return: 1 if full 0 otherwise
+ */
 int binary_tree_is_complete(const binary_tree_t *tree)
 {
 	if (!tree || binary_tree_is_perfect_1(tree) == 0)
