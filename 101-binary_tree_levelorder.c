@@ -14,6 +14,7 @@ void aux(const binary_tree_t *tree, size_t i, void (*func)(int))
 	if(binary_tree_depth(tree) == i)
 		func(tree->n);
 	aux(tree->left, i, func);
+	printf("hola\n");
 	aux(tree->right, i, func);
 }
 
