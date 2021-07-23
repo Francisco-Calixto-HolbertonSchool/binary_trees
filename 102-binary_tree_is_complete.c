@@ -27,13 +27,12 @@ int binary_tree_is_perfect_1(const binary_tree_t *tree)
  * Return: 1 if full 0 otherwise
  */
 
-int aux(binary_tree_t *tree, int flag)
+int aux(const binary_tree_t *tree, int flag)
 {
 	if (!tree)
 		if (flag == 1)
 			return (0);
-		else
-			return (1);
+		return (1);
 	if (binary_tree_height(tree) == binary_tree_depth(tree))
 	{
 		if (binary_tree_is_full(tree->parent) == 0 && (tree->parent->left->n != tree->n))
@@ -41,6 +40,7 @@ int aux(binary_tree_t *tree, int flag)
 	}
 	aux(tree->left, flag);
 	aux(tree->right, flag);
+	return (0);
 }
 
 /**
