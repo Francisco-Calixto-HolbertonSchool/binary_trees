@@ -35,7 +35,8 @@ int aux(const binary_tree_t *tree, int flag)
 		return (1);
 	if (binary_tree_height(tree) == binary_tree_depth(tree))
 	{
-		if (binary_tree_is_full(tree->parent) == 0 && (tree->parent->left->n != tree->n))
+		if (binary_tree_is_full(tree->parent) == 0 
+		    && (tree->parent->left->n != tree->n))
 			flag = 1;
 	}
 	aux(tree->left, flag);
