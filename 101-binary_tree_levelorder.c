@@ -13,8 +13,8 @@ void aux(const binary_tree_t *tree, size_t i, void (*func)(int))
 {
 	if (!tree || !func)
 		return;
-	if(binary_tree_depth(tree) == i)
-                func(tree->n);
+	if (binary_tree_depth(tree) == i)
+		func(tree->n);
 	aux(tree->left, i, func);
 	aux(tree->right, i, func);
 }
